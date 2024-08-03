@@ -1,4 +1,5 @@
 const express=require('express')
+const app=express();
 const mongoose=require('mongoose')
 const dotenv=require('dotenv')
 const cors=require('cors')
@@ -15,7 +16,7 @@ const authRouter=require("./routes/auth.router")
 const wishlistRouter =require("./routes/wishlist.router")
 
 const connectDB=require('./config/dbconfig')
-const app=express();
+
 
 app.use(express.json());
 
